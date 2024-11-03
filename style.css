@@ -163,16 +163,18 @@ section#edit-task {
     margin: 20px;
     width: 90%;
     max-width: 800px;
-
     height: fit-content;
     margin-bottom: 10px;
     border-radius: 20px;
     background-color: #543310;
     h1 {
+      z-index: 10;
       margin: 20px auto;
+      color: #f8f4e1;
       font-size: 40px;
       border-bottom: 5px solid #f8f4e1;
     }
+
     input#edited-task {
       font-family: "DynaPuff", system-ui;
       overflow: hidden;
