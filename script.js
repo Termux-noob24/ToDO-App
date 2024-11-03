@@ -9,14 +9,17 @@ const editTask = (task) => {
   const cancel = document.getElementById("cancel-btn");
 
   myModal.style.display = "flex";
+  add.style.display = "none";
   input.value = task.textContent;
   done.addEventListener("click", () => {
     task.textContent = input.value;
     saveTasks();
     myModal.style.display = "none";
+    add.style.display = "flex";
   });
   cancel.addEventListener("click", () => {
     myModal.style.display = "none";
+    add.style.display = "flex";
   });
 };
 const addTask = () => {
